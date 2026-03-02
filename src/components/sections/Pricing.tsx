@@ -1,4 +1,4 @@
-import { pricing } from "@/lib/content";
+import { pricing, contact } from "@/lib/content";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -6,12 +6,20 @@ import { Button } from "@/components/ui/Button";
 export function Pricing() {
   return (
     <SectionWrapper id="services">
-      <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
-        How We Work Together
-      </h2>
-      <p className="mt-4 max-w-2xl text-body">
-        three ways in, depending on where you are.
-      </p>
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
+          How We Work Together
+        </h2>
+        <p className="mt-4 text-body">{contact.description}</p>
+        <div className="mt-6 inline-flex flex-wrap justify-center gap-x-6 gap-y-2 text-left">
+          {contact.qualifiers.map((q) => (
+            <span key={q} className="flex items-center gap-2 text-sm text-body">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              {q}
+            </span>
+          ))}
+        </div>
+      </div>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
         {pricing.map((tier) => (
@@ -35,7 +43,12 @@ export function Pricing() {
               ))}
             </ul>
             <div className="mt-6">
-              <Button href="#contact" className="w-full text-center">
+              <Button
+                href={contact.cta.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center"
+              >
                 {tier.cta}
               </Button>
             </div>

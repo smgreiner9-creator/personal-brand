@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Proof } from "@/components/sections/Proof";
 import { WhatIDo } from "@/components/sections/WhatIDo";
 import { Pricing } from "@/components/sections/Pricing";
-import { Contact } from "@/components/sections/Contact";
 import { Newsletter } from "@/components/sections/Newsletter";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       <Proof />
       <WhatIDo />
       <Pricing />
-      <Contact />
       <Newsletter />
     </>
   );

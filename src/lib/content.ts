@@ -15,7 +15,6 @@ export const navLinks: NavLink[] = [
   { label: "projects", href: "#projects" },
   { label: "services", href: "#services" },
   { label: "newsletter", href: "#newsletter" },
-  { label: "contact", href: "#contact" },
 ];
 
 export const hero = {
@@ -28,7 +27,7 @@ export const hero = {
     "now i build with AI agents. i describe the product and the positioning, my AI co-founder aiden handles research and execution, and i make the judgment calls that turn code into something people actually want.",
   ],
   tagline: "I strategize. AI executes. We ship.",
-  ctaPrimary: { label: "Book a Call", href: "#contact" },
+  ctaPrimary: { label: "Book a Call", href: "#services" },
   ctaSecondary: { label: "See My Work", href: "#projects" },
 };
 
