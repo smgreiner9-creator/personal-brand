@@ -22,6 +22,9 @@ export function Pricing() {
               {tier.title}
             </h3>
             <p className="mt-3 text-sm italic text-muted">{tier.problem}</p>
+            <p className="mt-4 text-sm leading-relaxed text-body">
+              {tier.description}
+            </p>
             <div className="mt-4 flex flex-1 flex-wrap gap-2">
               {tier.includes.map((item) => (
                 <span
