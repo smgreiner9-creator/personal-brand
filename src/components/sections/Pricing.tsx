@@ -10,15 +10,9 @@ export function Pricing() {
         <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
           How We Work Together
         </h2>
-        <p className="mt-4 text-body">{contact.description}</p>
-        <div className="mt-6 inline-flex flex-wrap justify-center gap-x-6 gap-y-2 text-left">
-          {contact.qualifiers.map((q) => (
-            <span key={q} className="flex items-center gap-2 text-sm text-body">
-              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              {q}
-            </span>
-          ))}
-        </div>
+        <p className="mt-4 text-body">
+          three ways in, depending on where you are.
+        </p>
       </div>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -28,20 +22,16 @@ export function Pricing() {
               {tier.title}
             </h3>
             <p className="mt-3 text-sm italic text-muted">{tier.problem}</p>
-            <p className="mt-4 text-sm leading-relaxed text-body">
-              {tier.description}
-            </p>
-            <ul className="mt-5 flex-1 space-y-2">
+            <div className="mt-4 flex flex-1 flex-wrap gap-2">
               {tier.includes.map((item) => (
-                <li
+                <span
                   key={item}
-                  className="flex items-start gap-2 text-sm text-body"
+                  className="rounded-full border border-border bg-bg-alt px-3 py-1 font-mono text-xs text-muted"
                 >
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                   {item}
-                </li>
+                </span>
               ))}
-            </ul>
+            </div>
             <div className="mt-6">
               <Button
                 href={contact.cta.href}
