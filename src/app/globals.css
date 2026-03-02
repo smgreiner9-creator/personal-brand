@@ -1,26 +1,189 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: #fafafa;
+  --color-bg-alt: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-body: #525252;
+  --color-muted: #a3a3a3;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+  --color-border: #e5e5e5;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+}
+
+/* Grain texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Scroll reveal animation */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.visible {
+  animation: reveal 0.6s ease-out forwards;
+}
+
+/* Staggered children */
+.reveal.visible > :nth-child(1) { animation-delay: 0ms; }
+.reveal.visible > :nth-child(2) { animation-delay: 50ms; }
+.reveal.visible > :nth-child(3) { animation-delay: 100ms; }
+.reveal.visible > :nth-child(4) { animation-delay: 150ms; }
+.reveal.visible > :nth-child(5) { animation-delay: 200ms; }
+
+/* Card hover micro-tilt */
+.card-tilt {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-tilt:hover {
+  transform: perspective(800px) rotateY(1deg) rotateX(-1deg) translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradient headline */
+.gradient-text {
+  background: linear-gradient(135deg, #1a1a1a 40%, #4f46e5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Forge visual — orbital animations */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.15); }
+}
+
+@keyframes float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(6px, -8px); }
+  50% { transform: translate(-4px, -12px); }
+  75% { transform: translate(-8px, -4px); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-8px, 6px); }
+  66% { transform: translate(6px, -6px); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 8px); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.forge-ring-outer {
+  animation: spin-slow 30s linear infinite;
+  translate: calc(var(--mx, 0) * 12px) calc(var(--my, 0) * 12px);
+  transition: translate 0.3s ease-out;
+}
+
+.forge-ring-inner {
+  animation: spin-reverse 20s linear infinite;
+  translate: calc(var(--mx, 0) * -8px) calc(var(--my, 0) * -8px);
+  transition: translate 0.3s ease-out;
+}
+
+.forge-core {
+  animation: pulse-glow 4s ease-in-out infinite;
+  translate: calc(var(--mx, 0) * 16px) calc(var(--my, 0) * 16px);
+  transition: translate 0.25s ease-out;
+}
+
+.forge-node-1 {
+  animation: float-1 8s ease-in-out infinite;
+  translate: calc(var(--mx, 0) * 20px) calc(var(--my, 0) * 20px);
+  transition: translate 0.35s ease-out;
+}
+.forge-node-2 {
+  animation: float-2 10s ease-in-out infinite;
+  translate: calc(var(--mx, 0) * -16px) calc(var(--my, 0) * -16px);
+  transition: translate 0.35s ease-out;
+}
+.forge-node-3 {
+  animation: float-3 12s ease-in-out infinite;
+  translate: calc(var(--mx, 0) * 20px) calc(var(--my, 0) * 20px);
+  transition: translate 0.35s ease-out;
+}
+.forge-node-4 {
+  animation: float-1 9s ease-in-out infinite reverse;
+  translate: calc(var(--mx, 0) * -16px) calc(var(--my, 0) * -16px);
+  transition: translate 0.35s ease-out;
+}
+
+.forge-chip {
+  animation: fade-in-up 0.6s ease-out 0.3s both;
+  translate: calc(var(--mx, 0) * 10px) calc(var(--my, 0) * 10px);
+  transition: translate 0.4s ease-out;
+}
+
+.forge-chip-delay {
+  animation: fade-in-up 0.6s ease-out 0.6s both;
+  translate: calc(var(--mx, 0) * -8px) calc(var(--my, 0) * -6px);
+  transition: translate 0.4s ease-out;
+}
+
+.forge-chip-delay-2 {
+  animation: fade-in-up 0.6s ease-out 0.9s both;
+  translate: calc(var(--mx, 0) * 10px) calc(var(--my, 0) * 10px);
+  transition: translate 0.4s ease-out;
+}
+
+/* Forge dot — mouse reactive */
+.forge-reactive-dot {
+  translate: calc(var(--mx, 0) * 6px) calc(var(--my, 0) * 6px);
+  transition: translate 0.2s ease-out;
 }
