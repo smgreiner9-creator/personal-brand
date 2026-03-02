@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { navLinks, siteConfig } from "@/lib/content";
+import { Button } from "@/components/ui/Button";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -24,6 +25,14 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <Button
+            href={siteConfig.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="!px-4 !py-1.5 text-sm"
+          >
+            Book a Call
+          </Button>
         </nav>
 
         {/* Mobile hamburger */}
@@ -57,6 +66,16 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <div className="mt-3 pt-3 border-t border-border">
+            <Button
+              href={siteConfig.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center text-sm"
+            >
+              Book a Call
+            </Button>
+          </div>
         </nav>
       )}
     </header>

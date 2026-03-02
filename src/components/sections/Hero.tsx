@@ -86,11 +86,9 @@ export function Hero() {
             {hero.subhead}
           </p>
 
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-body">
-            {hero.paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
+          <p className="mt-8 text-base leading-relaxed text-body">
+            {hero.paragraph}
+          </p>
 
           <p className="gradient-text mt-8 font-serif text-lg font-semibold">
             {hero.tagline}

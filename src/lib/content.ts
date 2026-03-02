@@ -8,6 +8,7 @@ export const siteConfig = {
   url: "https://byforge.dev",
   ogImage: "/og-image.png",
   twitterHandle: "@J3ndrix_",
+  calendly: "https://calendly.com/smgreiner9/30min",
 };
 
 export const navLinks: NavLink[] = [
@@ -20,46 +21,43 @@ export const navLinks: NavLink[] = [
 export const hero = {
   headline: "Strategy meets AI.\nProducts get shipped.",
   subhead:
-    "a decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct, it accelerates it.",
-  paragraphs: [
-    "i've spent 10+ years in tech. product marketing, IT project management, growth, go-to-market. startups and enterprise environments where shipping on time was the only option.",
-    "that background gave me two things most builders don't have: the strategic eye to know what will resonate, and the operational discipline to actually deliver it on scope and on schedule.",
-    "now i build with AI agents. i describe the product and the positioning, my AI co-founder aiden handles research and execution, and i make the judgment calls that turn code into something people actually want.",
-  ],
-  tagline: "I strategize. AI executes. We ship.",
-  ctaPrimary: { label: "Book a Call", href: "#services" },
+    "a decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct. it accelerates it.",
+  paragraph:
+    "10+ years in product marketing, IT project management, and growth. that gave me two things most builders don't have: the strategic eye to know what will resonate, and the operational discipline to deliver it on scope and on schedule. now i build with AI agents that handle the research and execution while i make the calls that matter.",
+  tagline: "i strategize. AI executes. we ship.",
+  ctaPrimary: { label: "Book a Call", href: "https://calendly.com/smgreiner9/30min" },
   ctaSecondary: { label: "See My Work", href: "#projects" },
 };
 
 export const lanes: LaneCard[] = [
   {
-    title: "AI consulting",
+    title: "AI agent architecture",
     description:
-      "i help founders and teams ship faster by integrating AI agents into their workflow. not as a toy, but as a force multiplier.",
+      "i design and deploy autonomous AI agents that handle real work. not chatbots. agents that research, execute, and deliver.",
     points: [
-      "AI agent architecture & deployment",
-      "workflow automation with LLMs",
-      "product strategy with AI-first thinking",
+      "custom agent builds",
+      "multi-model orchestration",
+      "tool and API integration",
     ],
   },
   {
-    title: "trading tools",
+    title: "workflow automation",
     description:
-      "custom signals, automated scanning, and trading infrastructure built for serious traders who want an edge.",
+      "i find the repetitive work your team does every day and replace it with AI-powered systems that run on their own.",
     points: [
-      "tradingview pine script strategies",
-      "automated chart scanning & alerts",
-      "trading journal platforms",
+      "process audit and mapping",
+      "LLM-powered automation",
+      "monitoring and iteration",
     ],
   },
   {
-    title: "music tech",
+    title: "product strategy",
     description:
-      "building collabor8, a platform where musicians collaborate on songs from idea to master, with AI-assisted workflows.",
+      "i help you figure out what to build, how to position it, and the fastest path to something people actually want.",
     points: [
-      "real-time collaboration tools",
-      "AI-assisted mixing & mastering",
-      "music production workflows",
+      "AI-first product design",
+      "go-to-market planning",
+      "build vs. buy analysis",
     ],
   },
 ];
@@ -68,30 +66,30 @@ export const projects: ProjectCard[] = [
   {
     title: "aiden",
     description:
-      "my AI cto. an autonomous agent that handles research, execution, trading analysis, and content. running 24/7 across multiple models.",
+      "autonomous AI agent managing research, execution, trading analysis, and content across multiple models. the same architecture i deploy for clients.",
     status: "live",
-    tags: ["openclaw", "multi-model", "autonomous"],
+    tags: ["24/7 automation", "multi-model", "zero maintenance"],
   },
   {
     title: "collabor8",
     description:
-      "music collaboration platform where the song is the unit of work. dark glassmorphic ui, real-time kanban from idea to master.",
+      "music collaboration platform built end-to-end with AI. real-time kanban workflow from idea to master. dark glassmorphic ui.",
     status: "building",
-    tags: ["next.js", "supabase", "real-time"],
+    tags: ["full-stack app", "real-time", "AI-assisted"],
   },
   {
     title: "pure gold",
     description:
-      "trading journal and signals platform for crypto and forex traders. vibe coded with AI from zero to shipped.",
+      "trading journal and signals platform for crypto and forex traders. designed and shipped with AI agents, from zero to production.",
     status: "live",
-    tags: ["trading", "pine script", "analytics"],
+    tags: ["shipped product", "analytics", "production"],
   },
   {
     title: "droidclaw",
     description:
-      "phone agent running on a pixel 6 pro. posts to x, manages apps, executes tasks, all via adb over tailscale. zero api cost.",
+      "phone agent that posts to social media, manages apps, and executes tasks remotely. zero API cost, fully automated.",
     status: "live",
-    tags: ["android", "adb", "automation"],
+    tags: ["mobile automation", "zero cost", "remote control"],
   },
 ];
 
@@ -157,13 +155,14 @@ export const contact = {
     "you want to integrate LLMs into your workflow. not just chat, but real execution",
     "you need someone who can manage the project end-to-end, not just advise",
   ],
-  cta: { label: "Book a 30-Min Call", href: "https://calendly.com/smgreiner9/30min" }, // Update with actual Cal.com link
+  cta: { label: "Book a 30-Min Call", href: "https://calendly.com/smgreiner9/30min" },
 };
 
 export const footer = {
   copyright: `© ${new Date().getFullYear()} forge studios. built with AI.`,
   socials: [
     { label: "x / twitter", href: "https://x.com/J3ndrix_" },
+    { label: "linkedin", href: "https://linkedin.com/company/forge-studios" },
     { label: "github", href: "https://github.com/smgreiner9-creator" },
   ] as SocialLink[],
 };

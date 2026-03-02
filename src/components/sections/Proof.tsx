@@ -10,8 +10,7 @@ export function Proof() {
         What I&apos;ve Built
       </h2>
       <p className="mt-4 max-w-2xl text-body">
-        real projects, shipped with AI. some make money, some are experiments.
-        all of it gets documented.
+        real projects, shipped with AI. this is the same architecture and process i bring to client work.
       </p>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">

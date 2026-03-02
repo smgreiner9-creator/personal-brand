@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.6; font-size: 14px; }
+h1 { font-size: 28px; border-bottom: 2px solid #4f46e5; padding-bottom: 8px; color: #1a1a1a; }
+h2 { font-size: 22px; color: #4f46e5; margin-top: 32px; }
+h3 { font-size: 17px; color: #1a1a1a; margin-top: 24px; }
+hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+blockquote { border-left: 3px solid #4f46e5; margin: 16px 0; padding: 12px 20px; background: #f5f5f5; }
+code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td { border: 1px solid #e5e5e5; padding: 8px 12px; text-align: left; font-size: 13px; }
+th { background: #f5f5f5; font-weight: 600; }
+ul, ol { padding-left: 24px; }
+li { margin: 4px 0; }
+strong { color: #1a1a1a; }
+</style></head>
+<body><h1>Build Sprint Playbook</h1>
+<h2>forge studios — build sprint delivery guide</h2>
+<hr />
+<h2>Overview</h2>
+<p>A 2-4 week focused engagement. You scope it, build it, hand it off. AI agents, automations, internal tools, workflow integrations. Fixed scope, fixed price. You benefit from being fast with AI — the client pays for the outcome, not your hours.</p>
+<hr />
+<h2>Phase 1: Scoping (days 1-3, before contract)</h2>
+<h3>Discovery Call (30-60 min)</h3>
+<p>If the client came through a strategy session, you already have context. If not, run a shortened discovery:</p>
+<ul>
+<li>what's the specific problem we're solving?</li>
+<li>what does "done" look like? (get them to describe the end state)</li>
+<li>who on their team will be involved?</li>
+<li>what systems/tools does this need to integrate with?</li>
+<li>what's the timeline pressure? (nice-to-have vs. urgent)</li>
+</ul>
+<h3>Write the Scope Document</h3>
+<p>This is your contract's backbone. Be specific — scope creep kills sprints.</p>
+<blockquote>
+<h2>Project Scope: [project name]</h2>
+<p><strong>Client:</strong> [company name]
+<strong>Date:</strong> [date]
+<strong>Sprint Duration:</strong> [2/3/4] weeks</p>
+<h3>Problem Statement</h3>
+<p>[2-3 sentences describing the problem in the client's words]</p>
+<h3>Deliverables</h3>
+<ol>
+<li>[specific deliverable — e.g., "AI agent that triages incoming support emails and drafts responses"]</li>
+<li>[specific deliverable — e.g., "dashboard showing triage accuracy and response times"]</li>
+<li>[specific deliverable — e.g., "documentation for team to manage and update the agent"]</li>
+</ol>
+<h3>What's Included</h3>
+<ul>
+<li>[list each thing they get]</li>
+<li>deployment to their infrastructure</li>
+<li>documentation and handoff session</li>
+<li>2 weeks post-launch support (bug fixes only, no new features)</li>
+</ul>
+<h3>What's NOT Included</h3>
+<ul>
+<li>[be explicit — e.g., "redesigning the existing CRM interface"]</li>
+<li>[e.g., "ongoing maintenance after the 2-week support window"]</li>
+<li>[e.g., "training datasets — client provides these"]</li>
+</ul>
+<h3>Timeline</h3>
+<ul>
+<li>Week 1: [milestone]</li>
+<li>Week 2: [milestone]</li>
+<li>Week 3: [milestone — if applicable]</li>
+<li>Week 4: testing, handoff, documentation</li>
+</ul>
+<h3>Investment</h3>
+<p>$[amount] — 50% upfront, 50% on delivery</p>
+<h3>Acceptance Criteria</h3>
+<p>The project is considered complete when:
+- [ ] [specific, testable condition]
+- [ ] [specific, testable condition]
+- [ ] [specific, testable condition]</p>
+</blockquote>
+<h3>Pricing the Sprint</h3>
+<p><strong>Internal formula (do not share with client):</strong></p>
+<ol>
+<li>estimate your actual build time (be honest with yourself)</li>
+<li>add 30% buffer for unknowns and client back-and-forth</li>
+<li>multiply by your target rate ($150-200/hr equivalent)</li>
+<li>round to a clean number</li>
+<li>sanity check: does the outcome justify the price from the client's perspective?</li>
+</ol>
+<p><strong>Pricing guidance:</strong>
+- simple automation (1 workflow, 1 integration): $3,000-4,000
+- moderate build (agent + dashboard + docs): $5,000-6,000
+- complex system (multi-agent, multiple integrations): $7,000-8,000</p>
+<p><strong>Payment terms:</strong> always 50/50. half upfront before work begins, half on delivery. non-negotiable. this protects both sides.</p>
+<hr />
+<h2>Phase 2: Build (weeks 1-3)</h2>
+<h3>Week 1: Foundation</h3>
+<p><strong>Monday — kickoff</strong>
+- 30-min kickoff call with client
+- confirm scope, access credentials, integration points
+- set up the project (repo, environments, accounts)
+- establish communication channel (slack channel or discord)</p>
+<p><strong>Daily rhythm:</strong>
+- build in focused blocks
+- use AI (aiden, claude code) to accelerate — this is your edge
+- document as you go (don't leave it all for the end)</p>
+<p><strong>End of week 1 deliverable:</strong>
+- core functionality working in a staging/dev environment
+- send a quick loom video or screenshot to the client showing progress
+- no formal meeting needed — async update is fine</p>
+<h3>Week 2: Integration and Polish</h3>
+<p><strong>Focus:</strong>
+- connect to client's systems (APIs, databases, tools)
+- handle edge cases and error states
+- build any UI/dashboard components
+- write basic tests for critical paths</p>
+<p><strong>Mid-sprint check-in (30 min call):</strong>
+- demo what's built so far
+- get feedback on anything that needs adjustment
+- flag any scope questions early: "this is what we agreed to, this is where we are, anything you want to adjust?"</p>
+<p><strong>Scope creep defense:</strong>
+When the client says "could we also add..."
+- if it's small (&lt; 2 hours): do it, don't mention it. builds goodwill.
+- if it's medium (2-8 hours): "absolutely, i'd add that as a phase 2 item after we ship the core. want me to note it down?"
+- if it's large (&gt; 8 hours): "that's a great idea. it's outside our current scope, but i can put together a separate sprint proposal for it."</p>
+<p>Never say no. Always say "yes, and here's how we'd approach that."</p>
+<h3>Week 3-4: Testing, Documentation, Handoff</h3>
+<p><strong>Testing checklist:</strong>
+- [ ] happy path works end-to-end
+- [ ] error handling works (bad inputs, API failures, edge cases)
+- [ ] performance is acceptable under expected load
+- [ ] security basics (no exposed credentials, input sanitization)</p>
+<p><strong>Documentation to deliver:</strong>
+1. <strong>Setup guide</strong> — how to deploy/run the system
+2. <strong>User guide</strong> — how the team uses it day-to-day
+3. <strong>Architecture overview</strong> — what's built, how pieces connect, where things live
+4. <strong>Troubleshooting</strong> — common issues and how to resolve them</p>
+<p><strong>Handoff call (45-60 min):</strong>
+- walk through the final product live
+- screen share the documentation
+- answer questions
+- confirm acceptance criteria are met (get verbal or written confirmation)
+- explain what the 2-week support window covers</p>
+<hr />
+<h2>Phase 3: Post-Launch Support (2 weeks)</h2>
+<h3>What's Covered</h3>
+<ul>
+<li>bug fixes (something broke that was working during handoff)</li>
+<li>configuration issues (environment variables, API keys, permissions)</li>
+<li>clarification questions about the documentation</li>
+</ul>
+<h3>What's NOT Covered</h3>
+<ul>
+<li>new features or enhancements</li>
+<li>changes to scope that weren't in the original agreement</li>
+<li>issues caused by changes the client made to the system</li>
+</ul>
+<h3>Response Time</h3>
+<ul>
+<li>acknowledge within 4 hours during business hours</li>
+<li>fix within 24-48 hours depending on severity</li>
+<li>communicate clearly if something takes longer</li>
+</ul>
+<hr />
+<h2>After the Sprint</h2>
+<h3>Follow-Up Sequence</h3>
+<ul>
+<li><strong>Day of handoff:</strong> send invoice for remaining 50%</li>
+<li><strong>Week 1 post-launch:</strong> check in — "how's everything running? any questions?"</li>
+<li><strong>Week 2 post-launch:</strong> "support window closes this week. everything solid?"</li>
+<li><strong>Week 4 post-launch:</strong> plant the seed — "now that [project] is running, there might be other areas where AI could help. happy to chat if you're thinking about next steps."</li>
+</ul>
+<h3>Converting to Retainer</h3>
+<p>After a successful sprint, the retainer pitch is natural:</p>
+<blockquote>
+<p>"you've seen what we can build in a few weeks. imagine having that capacity on tap every month — continuous improvements, new automations, someone owning the AI side of your business. that's what the fractional AI lead engagement looks like. want me to put together what that would look like for you?"</p>
+</blockquote>
+<p><strong>Target:</strong> 20-30% of sprint clients convert to retainers. If you're below 15%, the sprint deliverable isn't impressive enough. If above 40%, you're leaving money on the table by not pitching sooner.</p>
+<hr />
+<h2>Internal Checklist</h2>
+<h3>Before Starting</h3>
+<ul>
+<li>[ ] scope document signed</li>
+<li>[ ] 50% payment received</li>
+<li>[ ] access credentials received (APIs, repos, environments)</li>
+<li>[ ] communication channel set up</li>
+<li>[ ] kickoff call scheduled</li>
+</ul>
+<h3>Before Handoff</h3>
+<ul>
+<li>[ ] all acceptance criteria met</li>
+<li>[ ] documentation written</li>
+<li>[ ] code pushed to client's repo or deployed to their environment</li>
+<li>[ ] handoff call completed</li>
+<li>[ ] client confirms delivery</li>
+<li>[ ] final invoice sent</li>
+</ul>
+<h3>After Sprint</h3>
+<ul>
+<li>[ ] follow-up email sent (week 1)</li>
+<li>[ ] support window communicated (week 2)</li>
+<li>[ ] retainer conversation opened (week 4)</li>
+<li>[ ] project added to portfolio / case study drafted</li>
+</ul></body>
+</html>
