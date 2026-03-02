@@ -1,8 +1,8 @@
 import type { NavLink, LaneCard, ProjectCard, PricingTier, SocialLink } from "@/types";
 
 export const siteConfig = {
-  name: "forge studios",
-  title: "forge studios // AI-augmented product studio",
+  name: "forge AI",
+  title: "forge AI // AI-augmented product studio",
   description:
     "a decade in frontend tech startups. now i build products with AI agents. strategy meets execution.",
   url: "https://byforge.dev",
@@ -159,7 +159,7 @@ export const contact = {
 };
 
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} forge studios. built with AI.`,
+  copyright: `© ${new Date().getFullYear()} forge AI. built with AI.`,
   socials: [
     { label: "x / twitter", href: "https://x.com/J3ndrix_" },
     { label: "linkedin", href: "https://linkedin.com/company/forge-studios" },

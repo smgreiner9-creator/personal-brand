@@ -3,6 +3,7 @@ import { Source_Serif_4, Inter, JetBrains_Mono } from "next/font/google";
 import { siteConfig } from "@/lib/content";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ActivityFeed } from "@/components/sections/ActivityFeed";
 import "./globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -59,6 +60,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <ActivityFeed />
       </body>
     </html>
   );
