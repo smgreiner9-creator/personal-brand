@@ -2,9 +2,9 @@ import type { NavLink, LaneCard, ProjectCard, PricingTier, SocialLink } from "@/
 
 export const siteConfig = {
   name: "forge AI",
-  title: "forge AI // AI-augmented product studio",
+  title: "Forge AI — AI-Augmented Product Studio",
   description:
-    "a decade in frontend tech startups. now i build products with AI agents. strategy meets execution.",
+    "A decade in frontend tech startups. Now I build products with AI agents. Strategy meets execution.",
   url: "https://byforge.dev",
   ogImage: "/og-image.png",
   twitterHandle: "@J3ndrix_",
@@ -162,7 +162,7 @@ export const footer = {
   copyright: `© ${new Date().getFullYear()} forge AI. built with AI.`,
   socials: [
     { label: "x / twitter", href: "https://x.com/J3ndrix_" },
-    { label: "linkedin", href: "https://linkedin.com/company/forge-studios" },
+    { label: "linkedin", href: "https://www.linkedin.com/company/forge-ai-consulting" },
     { label: "github", href: "https://github.com/smgreiner9-creator" },
   ] as SocialLink[],
 };
