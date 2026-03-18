@@ -140,7 +140,6 @@ export const newsletter = {
   headline: "the forge log",
   description:
     "weekly dispatches on building products with AI. the wins, the failures, and the real numbers. no fluff, no hustle porn. just what's actually working.",
-  buttondownUsername: "jen", // Update with actual Buttondown username
   placeholder: "your@email.com",
   cta: "Subscribe",
   note: "free. unsubscribe anytime. no spam, ever.",
