@@ -75,14 +75,14 @@ export const projects: ProjectCard[] = [
     title: "collabor8",
     description:
       "music collaboration platform built end-to-end with AI. real-time kanban workflow from idea to master. dark glassmorphic ui.",
-    status: "building",
+    status: "live",
     tags: ["full-stack app", "real-time", "AI-assisted"],
   },
   {
     title: "pure gold",
     description:
       "trading journal and signals platform for crypto and forex traders. designed and shipped with AI agents, from zero to production.",
-    status: "live",
+    status: "building",
     tags: ["shipped product", "analytics", "production"],
   },
   {
