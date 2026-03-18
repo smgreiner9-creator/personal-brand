@@ -86,11 +86,11 @@ export const projects: ProjectCard[] = [
     tags: ["shipped product", "analytics", "production"],
   },
   {
-    title: "droidclaw",
+    title: "forge tools",
     description:
-      "phone agent that posts to social media, manages apps, and executes tasks remotely. zero API cost, fully automated.",
+      "free AI readiness assessment and 50+ point security scanner for businesses. scan your site, get a grade, and see exactly what to fix before adopting AI.",
     status: "live",
-    tags: ["mobile automation", "zero cost", "remote control"],
+    tags: ["lead gen", "security scanner", "AI readiness"],
   },
 ];
 
