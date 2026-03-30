@@ -78,8 +78,10 @@ export function Hero() {
 
         {/* Right — copy */}
         <div className="order-1 md:order-2">
-          <h1 className="gradient-text whitespace-pre-line font-serif text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+          <h1 className="font-serif text-3xl font-bold leading-tight text-text md:text-4xl lg:text-5xl">
             {hero.headline}
+            <br />
+            <span className="gradient-text">{hero.headlineAccent}</span>
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-body md:text-xl">

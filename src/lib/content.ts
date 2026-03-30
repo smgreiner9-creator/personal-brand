@@ -21,7 +21,8 @@ export const navLinks: NavLink[] = [
 ];
 
 export const hero = {
-  headline: "From strategy to system.\nAI that works.",
+  headline: "From strategy to system.",
+  headlineAccent: "AI that works.",
   subhead:
     "a decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct. it accelerates it.",
   paragraph:
