@@ -20,13 +20,13 @@ export const navLinks: NavLink[] = [
 ];
 
 export const hero = {
-  headline: "Strategy meets AI.\nProducts get shipped.",
+  headline: "From strategy to system.\nAI that works.",
   subhead:
     "a decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct. it accelerates it.",
   paragraph:
     "10+ years in product marketing, IT project management, and growth. that gave me two things most builders don't have: the strategic eye to know what will resonate, and the operational discipline to deliver it on scope and on schedule. now i build with AI agents that handle the research and execution while i make the calls that matter.",
   tagline: "i strategize. AI executes. we ship.",
-  ctaPrimary: { label: "Book a Call", href: "https://calendly.com/smgreiner9/30min" },
+  ctaPrimary: { label: "Book an Intro Call", href: "https://calendly.com/smgreiner9/30min" },
   ctaSecondary: { label: "See My Work", href: "#projects" },
 };
 
@@ -148,14 +148,14 @@ export const newsletter = {
 export const contact = {
   headline: "let's talk",
   description:
-    "i take on a small number of consulting projects where product strategy meets AI execution. if you're a founder or team looking to ship faster with AI, let's see if it's a fit.",
+    "start with a 30-minute intro call. from there, we'll decide whether a paid 90-minute strategy session, build sprint, or deeper engagement makes the most sense.",
   qualifiers: [
     "you have a product idea but need help with AI-first architecture",
     "your team is drowning in manual work that AI could automate",
     "you want to integrate LLMs into your workflow. not just chat, but real execution",
     "you need someone who can manage the project end-to-end, not just advise",
   ],
-  cta: { label: "Book a 30-Min Call", href: "https://calendly.com/smgreiner9/30min" },
+  cta: { label: "Book an Intro Call", href: "https://calendly.com/smgreiner9/30min" },
 };
 
 export const footer = {
