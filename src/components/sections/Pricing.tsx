@@ -44,6 +44,9 @@ export function Pricing() {
               >
                 {tier.cta}
               </Button>
+              <p className="mt-2 text-center text-xs text-muted">
+                starts with a free 30-minute intro call
+              </p>
             </div>
           </Card>
         ))}
