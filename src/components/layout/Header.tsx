@@ -31,7 +31,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="!px-4 !py-1.5 text-sm"
           >
-            Book a Call
+            Book an Intro Call
           </Button>
         </nav>
 
@@ -73,7 +73,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="w-full text-center text-sm"
             >
-              Book a Call
+              Book an Intro Call
             </Button>
           </div>
         </nav>
