@@ -16,8 +16,7 @@ export const navLinks: NavLink[] = [
   { label: "projects", href: "#projects" },
   { label: "services", href: "#services" },
   { label: "newsletter", href: "#newsletter" },
-  { label: "tools", href: "https://tools.byforge.dev" },
-  { label: "toolbox", href: "https://tools.byforge.dev/toolbox" },
+  { label: "toolbox", href: "https://tools.byforge.dev" },
 ];
 
 export const hero = {
