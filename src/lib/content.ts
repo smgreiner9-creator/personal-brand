@@ -12,9 +12,9 @@ export const siteConfig = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "what i do", href: "#what-i-do" },
-  { label: "projects", href: "#projects" },
-  { label: "services", href: "#services" },
+  { label: "what i do", href: "/#what-i-do" },
+  { label: "projects", href: "/#projects" },
+  { label: "services", href: "/#services" },
   { label: "blog", href: "/blog" },
   { label: "toolbox", href: "https://tools.byforge.dev" },
 ];
