@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BlogContent } from "@/components/blog/BlogContent";
+import { BlogNewsletter } from "@/components/blog/BlogNewsletter";
 
 interface BlogPost {
   slug: string;
@@ -106,6 +107,8 @@ export default async function BlogPostPage({
           ))}
         </div>
       )}
+
+      <BlogNewsletter />
     </article>
   );
 }

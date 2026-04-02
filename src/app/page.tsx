@@ -2,7 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Proof } from "@/components/sections/Proof";
 import { WhatIDo } from "@/components/sections/WhatIDo";
 import { Pricing } from "@/components/sections/Pricing";
-import { Newsletter } from "@/components/sections/Newsletter";
+import { ReadinessCTA } from "@/components/sections/ReadinessCTA";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <WhatIDo />
       <Proof />
       <Pricing />
-      <Newsletter />
+      <ReadinessCTA />
     </>
   );
 }
