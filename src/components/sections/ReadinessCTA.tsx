@@ -154,8 +154,11 @@ export function ReadinessCTA() {
             <span className="text-3xl font-bold text-text">{pct}/100</span>
           </div>
           <p className="mt-4 text-body">{grade.message}</p>
+          <p className="mt-2 text-xs text-muted">
+            scored across AI adoption, automation opportunity, data readiness, and urgency.
+          </p>
 
-          <div className="mx-auto mt-8 max-w-sm rounded-xl border border-border bg-surface p-6">
+          <div className="mx-auto mt-8 max-w-md rounded-xl border border-border bg-surface p-6">
             <p className="text-sm font-medium text-text">
               want the full breakdown with personalized recommendations?
             </p>
@@ -184,21 +187,16 @@ export function ReadinessCTA() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover disabled:opacity-50"
+                className="whitespace-nowrap rounded-lg bg-accent px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover disabled:opacity-50"
               >
                 {submitting ? "..." : "Get My Report"}
               </button>
             </form>
           </div>
 
-          <a
-            href="https://tools.byforge.dev/readiness"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block text-xs text-muted hover:text-text"
-          >
-            or take the full 8-question deep dive
-          </a>
+          <p className="mt-4 text-xs text-muted">
+            want a deeper analysis? take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
+          </p>
         </div>
       </SectionWrapper>
     );
@@ -214,8 +212,11 @@ export function ReadinessCTA() {
           <span className="text-3xl font-bold text-text">{pct}/100</span>
         </div>
         <p className="mt-4 text-body">{grade.message}</p>
+        <p className="mt-2 text-xs text-muted">
+          scored across AI adoption, automation opportunity, data readiness, and urgency.
+        </p>
 
-        <div className="mx-auto mt-8 max-w-sm space-y-3">
+        <div className="mx-auto mt-8 max-w-md space-y-3">
           <p className="text-sm font-medium text-accent">check your inbox for the full breakdown.</p>
           <a
             href="https://calendly.com/smgreiner9/30min"
@@ -226,7 +227,7 @@ export function ReadinessCTA() {
             Book an Intro Call
           </a>
           <p className="text-xs text-muted">
-            or <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">take the full assessment</a> for a deeper analysis.
+            want a deeper analysis? take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
           </p>
         </div>
       </div>
