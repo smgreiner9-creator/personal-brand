@@ -135,6 +135,19 @@ export const pricing: PricingTier[] = [
     ],
     cta: "Explore a Retainer",
   },
+  {
+    title: "humanized AI documents",
+    problem: "\"our AI-generated content reads like... AI-generated content.\"",
+    description:
+      "send us your AI draft. we rewrite it so the phrasing, rhythm, and structure feel natural. no detectable patterns, no robotic hedging. just writing that reads like a person who knows the subject sat down and wrote it.",
+    includes: [
+      "light — $75, up to 1,500 words",
+      "standard — $150, up to 5,000 words",
+      "premium — $350, up to 15,000 words",
+      "brand voice calibration",
+    ],
+    cta: "Get Started",
+  },
 ];
 
 export const newsletter = {

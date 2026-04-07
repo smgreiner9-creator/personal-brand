@@ -11,11 +11,11 @@ export function Pricing() {
           How We Work Together
         </h2>
         <p className="mt-4 text-body">
-          three ways in, depending on where you are.
+          four ways in, depending on where you are.
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-3">
+      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {pricing.map((tier) => (
           <Card key={tier.title} className="flex flex-col">
             <h3 className="font-serif text-xl font-semibold text-text">
