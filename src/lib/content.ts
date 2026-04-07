@@ -66,30 +66,30 @@ export const lanes: LaneCard[] = [
 
 export const projects: ProjectCard[] = [
   {
-    title: "aiden",
+    title: "Aiden",
     description:
-      "autonomous AI agent managing research, execution, trading analysis, and content across multiple models. the same architecture i deploy for clients.",
+      "Autonomous AI agent managing research, execution, trading analysis, and content across multiple models. The same architecture we deploy for clients.",
     status: "live",
     tags: ["24/7 automation", "multi-model", "zero maintenance"],
   },
   {
-    title: "collabor8",
+    title: "Collabor8",
     description:
-      "music collaboration platform built end-to-end with AI. real-time kanban workflow from idea to master. dark glassmorphic ui.",
+      "Music collaboration platform built end-to-end with AI. Real-time Kanban workflow from idea to master. Dark glassmorphic UI.",
     status: "live",
     tags: ["full-stack app", "real-time", "AI-assisted"],
   },
   {
-    title: "pure gold",
+    title: "Pure Gold",
     description:
-      "trading journal and signals platform for crypto and forex traders. designed and shipped with AI agents, from zero to production.",
+      "Trading journal and signals platform for crypto and forex traders. Designed and shipped with AI agents, from zero to production.",
     status: "building",
     tags: ["shipped product", "analytics", "production"],
   },
   {
-    title: "forge tools",
+    title: "Forge Tools",
     description:
-      "free AI readiness assessment and 50+ point security scanner for businesses. scan your site, get a grade, and see exactly what to fix before adopting AI.",
+      "Free AI readiness assessment and 50+ point security scanner for businesses. Scan your site, get a grade, and see exactly what to fix before adopting AI.",
     status: "live",
     tags: ["lead gen", "security scanner", "AI readiness"],
   },
@@ -97,86 +97,86 @@ export const projects: ProjectCard[] = [
 
 export const pricing: PricingTier[] = [
   {
-    title: "strategy session",
-    problem: "\"i know AI could help us, but i don't know where to start.\"",
+    title: "Strategy Session",
+    problem: "\"I know AI could help us, but I don't know where to start.\"",
     description:
-      "a 90-minute deep dive into your workflow, team, and goals. you walk away with a prioritized roadmap of exactly where AI fits and what to build first.",
+      "A 90-minute deep dive into your workflow, team, and goals. You walk away with a prioritized roadmap of exactly where AI fits and what to build first.",
     includes: [
-      "full workflow audit",
+      "Full workflow audit",
       "AI opportunity mapping",
-      "written roadmap with priorities",
+      "Written roadmap with priorities",
       "30-day action plan",
     ],
     cta: "Book a Strategy Session",
   },
   {
-    title: "build sprint",
-    problem: "\"we need this built, and we need it fast.\"",
+    title: "Build Sprint",
+    problem: "\"We need this built, and we need it fast.\"",
     description:
-      "a 2-4 week focused engagement. i scope it, build it, and hand it off. AI agents, automations, internal tools. fixed scope, fixed price.",
+      "A 2-4 week focused engagement. We scope it, build it, and hand it off. AI agents, automations, internal tools. Fixed scope, fixed price.",
     includes: [
-      "scoping and architecture",
-      "full build and deployment",
-      "documentation and handoff",
+      "Scoping and architecture",
+      "Full build and deployment",
+      "Documentation and handoff",
       "2 weeks post-launch support",
     ],
     cta: "Start a Build Sprint",
   },
   {
-    title: "fractional AI lead",
-    problem: "\"we need someone owning AI for us, not just advising.\"",
+    title: "Fractional AI Lead",
+    problem: "\"We need someone owning AI for us, not just advising.\"",
     description:
-      "ongoing monthly engagement. i embed with your team as your AI lead. weekly check-ins, continuous improvements, new automations as needs emerge.",
+      "Ongoing monthly engagement. We embed with your team as your AI lead. Weekly check-ins, continuous improvements, new automations as needs emerge.",
     includes: [
-      "weekly strategy syncs",
-      "continuous AI integration",
-      "team training and enablement",
-      "priority slack/discord access",
+      "Weekly strategy syncs",
+      "Continuous AI integration",
+      "Team training and enablement",
+      "Priority Slack/Discord access",
     ],
     cta: "Explore a Retainer",
   },
   {
-    title: "humanized AI documents",
-    problem: "\"our AI-generated content reads like... AI-generated content.\"",
+    title: "Humanized AI Documents",
+    problem: "\"Our AI-generated content reads like... AI-generated content.\"",
     description:
-      "send us your AI draft. we rewrite it so the phrasing, rhythm, and structure feel natural. no detectable patterns, no robotic hedging. just writing that reads like a person who knows the subject sat down and wrote it.",
+      "Send us your AI draft. We rewrite it so the phrasing, rhythm, and structure feel natural. No detectable patterns, no robotic hedging. Just writing that reads like a person who knows the subject sat down and wrote it.",
     includes: [
-      "light — $75, up to 1,500 words",
-      "standard — $150, up to 5,000 words",
-      "premium — $350, up to 15,000 words",
-      "brand voice calibration",
+      "Light — $75, up to 1,500 words",
+      "Standard — $150, up to 5,000 words",
+      "Premium — $350, up to 15,000 words",
+      "Brand voice calibration",
     ],
     cta: "Get Started",
   },
 ];
 
 export const newsletter = {
-  headline: "the forge log",
+  headline: "The Forge Log",
   description:
-    "weekly dispatches on building products with AI. the wins, the failures, and the real numbers. no fluff, no hustle porn. just what's actually working.",
+    "Weekly dispatches on building products with AI. The wins, the failures, and the real numbers. No fluff, no hustle porn. Just what's actually working.",
   placeholder: "your@email.com",
   cta: "Subscribe",
-  note: "free. unsubscribe anytime. no spam, ever.",
+  note: "Free. Unsubscribe anytime. No spam, ever.",
 };
 
 export const contact = {
-  headline: "let's talk",
+  headline: "Let's Talk",
   description:
-    "start with a 30-minute intro call. from there, we'll decide whether a paid 90-minute strategy session, build sprint, or deeper engagement makes the most sense.",
+    "Start with a 30-minute intro call. From there, we'll decide whether a paid 90-minute strategy session, build sprint, or deeper engagement makes the most sense.",
   qualifiers: [
-    "you have a product idea but need help with AI-first architecture",
-    "your team is drowning in manual work that AI could automate",
-    "you want to integrate LLMs into your workflow. not just chat, but real execution",
-    "you need someone who can manage the project end-to-end, not just advise",
+    "You have a product idea but need help with AI-first architecture",
+    "Your team is drowning in manual work that AI could automate",
+    "You want to integrate LLMs into your workflow — not just chat, but real execution",
+    "You need someone who can manage the project end-to-end, not just advise",
   ],
   cta: { label: "Book an Intro Call", href: "https://calendly.com/smgreiner9/30min" },
 };
 
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} forge AI. built with AI.`,
+  copyright: `© ${new Date().getFullYear()} By Forge Studios LLC`,
   socials: [
-    { label: "x / twitter", href: "https://x.com/J3ndrix_" },
-    { label: "linkedin", href: "https://www.linkedin.com/company/forge-ai-consulting" },
-    { label: "github", href: "https://github.com/smgreiner9-creator" },
+    { label: "X / Twitter", href: "https://x.com/J3ndrix_" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/forge-ai-consulting" },
+    { label: "GitHub", href: "https://github.com/smgreiner9-creator" },
   ] as SocialLink[],
 };
