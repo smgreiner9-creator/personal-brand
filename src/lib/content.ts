@@ -110,6 +110,19 @@ export const pricing: PricingTier[] = [
     cta: "Book a Strategy Session",
   },
   {
+    title: "Humanized AI Documents",
+    problem: "\"Our AI-generated content reads like... AI-generated content.\"",
+    description:
+      "Send us your AI draft. We rewrite it so the phrasing, rhythm, and structure feel natural. No detectable patterns, no robotic hedging. Just writing that reads like a person who knows the subject sat down and wrote it.",
+    includes: [
+      "Light — $75, up to 1,500 words",
+      "Standard — $150, up to 5,000 words",
+      "Premium — $350, up to 15,000 words",
+      "Brand voice calibration",
+    ],
+    cta: "Get Started",
+  },
+  {
     title: "Build Sprint",
     problem: "\"We need this built, and we need it fast.\"",
     description:
@@ -134,19 +147,6 @@ export const pricing: PricingTier[] = [
       "Priority Slack/Discord access",
     ],
     cta: "Explore a Retainer",
-  },
-  {
-    title: "Humanized AI Documents",
-    problem: "\"Our AI-generated content reads like... AI-generated content.\"",
-    description:
-      "Send us your AI draft. We rewrite it so the phrasing, rhythm, and structure feel natural. No detectable patterns, no robotic hedging. Just writing that reads like a person who knows the subject sat down and wrote it.",
-    includes: [
-      "Light — $75, up to 1,500 words",
-      "Standard — $150, up to 5,000 words",
-      "Premium — $350, up to 15,000 words",
-      "Brand voice calibration",
-    ],
-    cta: "Get Started",
   },
 ];
 
