@@ -15,7 +15,7 @@ export function Pricing() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
         {pricing.map((tier) => (
           <Card key={tier.title} className="flex flex-col">
             <h3 className="font-serif text-xl font-semibold text-text">
@@ -25,7 +25,7 @@ export function Pricing() {
             <p className="mt-4 text-sm leading-relaxed text-body">
               {tier.description}
             </p>
-            <div className="mt-4 flex flex-1 flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
               {tier.includes.map((item) => (
                 <span
                   key={item}
@@ -35,7 +35,7 @@ export function Pricing() {
                 </span>
               ))}
             </div>
-            <div className="mt-6">
+            <div className="mt-auto pt-6">
               <Button
                 href={contact.cta.href}
                 target="_blank"
