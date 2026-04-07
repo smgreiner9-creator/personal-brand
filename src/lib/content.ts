@@ -1,10 +1,10 @@
 import type { NavLink, LaneCard, ProjectCard, PricingTier, SocialLink } from "@/types";
 
 export const siteConfig = {
-  name: "forge AI",
-  title: "Forge AI — AI-Augmented Product Studio",
+  name: "By Forge",
+  title: "By Forge — AI-Augmented Product Studio",
   description:
-    "A decade in frontend tech startups. Now I build products with AI agents. Strategy meets execution.",
+    "A decade in frontend tech startups. Now we build products with AI agents. Strategy meets execution.",
   url: "https://byforge.dev",
   ogImage: "/og-image.png",
   twitterHandle: "@J3ndrix_",
@@ -12,54 +12,54 @@ export const siteConfig = {
 };
 
 export const navLinks: NavLink[] = [
-  { label: "what i do", href: "/#what-i-do" },
-  { label: "projects", href: "/#projects" },
-  { label: "services", href: "/#services" },
-  { label: "blog", href: "/blog" },
-  { label: "toolbox", href: "https://tools.byforge.dev" },
+  { label: "What We Do", href: "/#what-we-do" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Services", href: "/#services" },
+  { label: "Blog", href: "/blog" },
+  { label: "Toolbox", href: "https://tools.byforge.dev" },
 ];
 
 export const hero = {
   headline: "From strategy to system.",
   headlineAccent: "AI that works.",
   subhead:
-    "a decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct. it accelerates it.",
+    "A decade inside frontend tech startups taught me what makes products win. AI doesn't replace that instinct. It accelerates it.",
   paragraph:
-    "10+ years in product marketing, IT project management, and growth. that gave me two things most builders don't have: the strategic eye to know what will resonate, and the operational discipline to deliver it on scope and on schedule. now i build with AI agents that handle the research and execution while i make the calls that matter.",
-  tagline: "i strategize. AI executes. we ship.",
+    "10+ years in product marketing, IT project management, and growth gave me two things most builders don't have: the strategic eye to know what will resonate, and the operational discipline to deliver it on scope and on schedule. Now we build with AI agents that handle the research and execution while we make the calls that matter.",
+  tagline: "We strategize. AI executes. We ship.",
   ctaPrimary: { label: "Book an Intro Call", href: "https://calendly.com/smgreiner9/30min" },
-  ctaSecondary: { label: "See My Work", href: "#projects" },
+  ctaSecondary: { label: "See Our Work", href: "#projects" },
 };
 
 export const lanes: LaneCard[] = [
   {
-    title: "AI agent architecture",
+    title: "AI Agent Architecture",
     description:
-      "i design and deploy autonomous AI agents that handle real work. not chatbots. agents that research, execute, and deliver.",
+      "We design and deploy autonomous AI agents that handle real work. Not chatbots. Agents that research, execute, and deliver.",
     points: [
-      "custom agent builds",
-      "multi-model orchestration",
-      "tool and API integration",
+      "Custom agent builds",
+      "Multi-model orchestration",
+      "Tool and API integration",
     ],
   },
   {
-    title: "workflow automation",
+    title: "Workflow Automation",
     description:
-      "i find the repetitive work your team does every day and replace it with AI-powered systems that run on their own.",
+      "We find the repetitive work your team does every day and replace it with AI-powered systems that run on their own.",
     points: [
-      "process audit and mapping",
+      "Process audit and mapping",
       "LLM-powered automation",
-      "monitoring and iteration",
+      "Monitoring and iteration",
     ],
   },
   {
-    title: "product strategy",
+    title: "Product Strategy",
     description:
-      "i help you figure out what to build, how to position it, and the fastest path to something people actually want.",
+      "We help you figure out what to build, how to position it, and the fastest path to something people actually want.",
     points: [
       "AI-first product design",
-      "go-to-market planning",
-      "build vs. buy analysis",
+      "Go-to-market planning",
+      "Build vs. buy analysis",
     ],
   },
 ];
