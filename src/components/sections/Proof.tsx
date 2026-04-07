@@ -7,10 +7,10 @@ export function Proof() {
   return (
     <SectionWrapper id="projects">
       <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
-        What I&apos;ve Built
+        What We&apos;ve Built
       </h2>
       <p className="mt-4 max-w-2xl text-body">
-        real projects, shipped with AI. this is the same architecture and process i bring to client work.
+        Real projects, shipped with AI. This is the same architecture and process we bring to client work.
       </p>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -3,12 +3,12 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
 export function WhatIDo() {
   return (
-    <SectionWrapper id="what-i-do" alt>
+    <SectionWrapper id="what-we-do" alt>
       <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
-        What I Do
+        What We Do
       </h2>
       <p className="mt-4 max-w-2xl text-body">
-        three lanes, one method: strategy meets AI execution.
+        Three lanes, one method: strategy meets AI execution.
       </p>
 
       <div className="mt-12 space-y-10 md:space-y-0 md:divide-y md:divide-border">

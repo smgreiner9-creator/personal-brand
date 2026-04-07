@@ -5,7 +5,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
 const questions = [
   {
-    text: "what's your current AI usage?",
+    text: "What's your current AI usage?",
     options: [
       { label: "None", score: 0 },
       { label: "Experimenting (ChatGPT, etc.)", score: 1 },
@@ -14,7 +14,7 @@ const questions = [
     ],
   },
   {
-    text: "what's your team's biggest time sink?",
+    text: "What's your team's biggest time sink?",
     options: [
       { label: "Customer support", score: 3 },
       { label: "Data entry & reporting", score: 3 },
@@ -24,7 +24,7 @@ const questions = [
     ],
   },
   {
-    text: "how would you describe your data readiness?",
+    text: "How would you describe your data readiness?",
     options: [
       { label: "No structured data", score: 0 },
       { label: "Data exists but siloed", score: 1 },
@@ -33,7 +33,7 @@ const questions = [
     ],
   },
   {
-    text: "what's your timeline?",
+    text: "What's your timeline?",
     options: [
       { label: "Exploring (no urgency)", score: 1 },
       { label: "Want to start in 1-3 months", score: 2 },
@@ -46,10 +46,10 @@ const questions = [
 const maxScore = 12;
 
 function getGrade(pct: number): { letter: string; color: string; message: string } {
-  if (pct >= 80) return { letter: "A", color: "text-green-600", message: "you're ahead of the curve. time to scale what's working." };
-  if (pct >= 60) return { letter: "B", color: "text-teal-600", message: "strong foundation. a focused sprint could unlock serious ROI." };
-  if (pct >= 40) return { letter: "C", color: "text-yellow-600", message: "you've got potential, but gaps are holding you back." };
-  return { letter: "D", color: "text-orange-600", message: "there's a big opportunity here. you just need the right roadmap." };
+  if (pct >= 80) return { letter: "A", color: "text-green-600", message: "You're ahead of the curve. Time to scale what's working." };
+  if (pct >= 60) return { letter: "B", color: "text-teal-600", message: "Strong foundation. A focused sprint could unlock serious ROI." };
+  if (pct >= 40) return { letter: "C", color: "text-yellow-600", message: "You've got potential, but gaps are holding you back." };
+  return { letter: "D", color: "text-orange-600", message: "There's a big opportunity here. You just need the right roadmap." };
 }
 
 export function ReadinessCTA() {
@@ -79,10 +79,10 @@ export function ReadinessCTA() {
       <SectionWrapper id="get-started">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
-            are you ready for AI?
+            Are You Ready for AI?
           </h2>
           <p className="mt-4 text-body">
-            most businesses know AI can help. few know where to start. take our 4-question scorecard
+            Most businesses know AI can help. Few know where to start. Take our 4-question scorecard
             and get a clear picture of where you stand.
           </p>
           <button
@@ -91,7 +91,7 @@ export function ReadinessCTA() {
           >
             Take the Scorecard
           </button>
-          <p className="mt-3 text-xs text-muted">takes 30 seconds. no signup required.</p>
+          <p className="mt-3 text-xs text-muted">Takes 30 seconds. No signup required.</p>
         </div>
       </SectionWrapper>
     );
@@ -135,7 +135,7 @@ export function ReadinessCTA() {
               }}
               className="mt-4 text-sm text-muted hover:text-text"
             >
-              back
+              Back
             </button>
           )}
         </div>
@@ -148,19 +148,19 @@ export function ReadinessCTA() {
     return (
       <SectionWrapper id="get-started">
         <div className="mx-auto max-w-xl text-center">
-          <p className="text-sm font-medium text-muted">your AI readiness score</p>
+          <p className="text-sm font-medium text-muted">Your AI Readiness Score</p>
           <div className="mt-3 flex items-center justify-center gap-4">
             <span className={`font-serif text-6xl font-bold ${grade.color}`}>{grade.letter}</span>
             <span className="text-3xl font-bold text-text">{pct}/100</span>
           </div>
           <p className="mt-4 text-body">{grade.message}</p>
           <p className="mt-2 text-xs text-muted">
-            scored across AI adoption, automation opportunity, data readiness, and urgency.
+            Scored across AI adoption, automation opportunity, data readiness, and urgency.
           </p>
 
           <div className="mx-auto mt-8 max-w-md rounded-xl border border-border bg-surface p-6">
             <p className="text-sm font-medium text-text">
-              want the full breakdown with personalized recommendations?
+              Want the full breakdown with personalized recommendations?
             </p>
             <form
               className="mt-4 flex flex-col gap-3 sm:flex-row"
@@ -195,7 +195,7 @@ export function ReadinessCTA() {
           </div>
 
           <p className="mt-4 text-xs text-muted">
-            want a deeper analysis? take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
+            Want a deeper analysis? Take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
           </p>
         </div>
       </SectionWrapper>
@@ -206,7 +206,7 @@ export function ReadinessCTA() {
   return (
     <SectionWrapper id="get-started">
       <div className="mx-auto max-w-xl text-center">
-        <p className="text-sm font-medium text-muted">your AI readiness score</p>
+        <p className="text-sm font-medium text-muted">Your AI Readiness Score</p>
         <div className="mt-3 flex items-center justify-center gap-4">
           <span className={`font-serif text-6xl font-bold ${grade.color}`}>{grade.letter}</span>
           <span className="text-3xl font-bold text-text">{pct}/100</span>
@@ -217,7 +217,7 @@ export function ReadinessCTA() {
         </p>
 
         <div className="mx-auto mt-8 max-w-md space-y-3">
-          <p className="text-sm font-medium text-accent">check your inbox for the full breakdown.</p>
+          <p className="text-sm font-medium text-accent">Check your inbox for the full breakdown.</p>
           <a
             href="https://calendly.com/smgreiner9/30min"
             target="_blank"
@@ -227,7 +227,7 @@ export function ReadinessCTA() {
             Book an Intro Call
           </a>
           <p className="text-xs text-muted">
-            want a deeper analysis? take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
+            Want a deeper analysis? Take the <a href="https://tools.byforge.dev/readiness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">full 8-question assessment</a> in our toolbox.
           </p>
         </div>
       </div>

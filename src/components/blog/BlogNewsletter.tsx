@@ -31,10 +31,10 @@ export function BlogNewsletter() {
   return (
     <div className="mt-12 rounded-xl border border-border bg-bg-alt p-6 sm:p-8">
       <h3 className="font-serif text-lg font-semibold text-text">
-        enjoyed this post?
+        Enjoyed this post?
       </h3>
       <p className="mt-1 text-sm text-body">
-        get more like it delivered to your inbox. no spam, just real insights on building with AI.
+        Get more like it delivered to your inbox. No spam, just real insights on building with AI.
       </p>
 
       {status === "success" ? (
