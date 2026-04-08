@@ -1,3 +1,10 @@
+function sanitizeHtml(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
+    .replace(/\bon\w+\s*=\s*["'][^"']*["']/gi, "")
+    .replace(/javascript\s*:/gi, "");
+}
+
 export function BlogContent({ html }: { html: string }) {
   return (
     <div
@@ -9,7 +16,7 @@ export function BlogContent({ html }: { html: string }) {
         prose-strong:text-text
         prose-img:rounded-xl
         prose-li:text-body"
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={{ __html: sanitizeHtml(html) }}
     />
   );
 }

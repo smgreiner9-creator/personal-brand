@@ -35,7 +35,7 @@ export async function generateMetadata({
   if (!post) return { title: "Not Found" };
 
   return {
-    title: `${post.title} - Forge AI`,
+    title: `${post.title} - By Forge`,
     description: post.excerpt,
     openGraph: {
       title: post.title,

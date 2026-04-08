@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BlogCard } from "@/components/blog/BlogCard";
 
 export const metadata: Metadata = {
-  title: "Blog - Forge AI",
+  title: "Blog - By Forge",
   description: "Insights on building products with AI. Strategy, case studies, tutorials, and real numbers.",
 };
 
@@ -31,10 +31,10 @@ export default async function BlogPage() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16">
       <h1 className="gradient-text font-serif text-3xl font-semibold md:text-4xl">
-        the forge log
+        The Forge Log
       </h1>
       <p className="mt-3 text-body">
-        insights on building products with AI. the wins, the failures, and the real numbers.
+        Insights on building products with AI. The wins, the failures, and the real numbers.
       </p>
 
       {posts.length === 0 ? (

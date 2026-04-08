@@ -171,6 +171,7 @@ export function ReadinessCTA() {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({ email, source: "readiness-mini" }),
+                  credentials: "include",
                 }).catch(() => {});
                 setSubmitting(false);
                 setStep("captured");
