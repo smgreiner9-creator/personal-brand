@@ -13,6 +13,7 @@ interface BlogPost {
   bannerUrl: string | null;
   author: string;
   createdAt: string;
+  updatedAt?: string;
   tags: string[];
 }
 
@@ -62,6 +63,15 @@ export default async function BlogPostPage({
     year: "numeric",
   });
 
+  const updatedDate =
+    post.updatedAt && post.updatedAt !== post.createdAt
+      ? new Date(post.updatedAt).toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        })
+      : null;
+
   return (
     <article className="mx-auto max-w-3xl px-6 py-16">
       <Link
@@ -76,6 +86,7 @@ export default async function BlogPostPage({
           {categoryLabels[post.category] || post.category}
         </span>
         <span>{date}</span>
+        {updatedDate && <><span>&middot;</span><span>Updated {updatedDate}</span></>}
         <span>&middot;</span>
         <span>By {post.author}</span>
       </div>
